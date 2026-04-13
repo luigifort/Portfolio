@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --color-bg: #ffffff;
-  --color-surface: #161616;
+  --color-surface: #0097b2;
   --color-border: #0097b2;
   --color-text: #0097b2;
   --color-text-muted: #666666;
@@ -63,7 +63,32 @@ body {
 
 body a:hover {
   color: var(--color-accent);
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-surface);
+  color: var(--color-bg);
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+.btn-secondary:hover {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 @layer components {
