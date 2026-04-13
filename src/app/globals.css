@@ -60,3 +60,9 @@ body {
   color: var(--color-text);
   font-family: var(--font-sans);
 }
+
+@layer components {
+  .layout {
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+}
