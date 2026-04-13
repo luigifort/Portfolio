@@ -2,12 +2,12 @@
 
 :root {
   /* Colors */
-  --color-bg: #155263;
+  --color-bg: #ffffff;
   --color-surface: #161616;
-  --color-border: #2a2a2a;
-  --color-text: #ffffff;
+  --color-border: #0097b2;
+  --color-text: #0097b2;
   --color-text-muted: #666666;
-  --color-accent: #f0f0f0;
+  --color-accent: #006577;
 
   /* Fonts */
   /* Il browser legge il valore di quella variabile CSS, che Next.js ha già impostato correttamente con il font caricato. */
@@ -59,6 +59,11 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
+}
+
+body a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 @layer components {
