@@ -1,3 +1,3 @@
 export default function Experience() {
-  return <section>Experience</section>;
+  return <section className="min-h-screen">Experience</section>;
 }

@@ -2,7 +2,7 @@ import NextLink from "next/link";
 
 export default function Hero() {
   return (
-    <section className=" mx-auto px-6 py-24 ">
+    <section className=" mx-auto px-6 py-24 min-h-screen">
       <div className="text-wrapper">
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
           Ciao mondo,
