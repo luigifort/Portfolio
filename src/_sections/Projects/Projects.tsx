@@ -1,4 +1,4 @@
-import Card from "@/_components/Card";
+import Card from "@/_components/cards/Project-Card";
 
 export default function Projects() {
   return (
