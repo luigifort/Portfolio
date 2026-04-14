@@ -4,6 +4,7 @@
   /* Colors */
   --color-bg: #faf6e9;
   --color-primary: #385170;
+  --color-primary-light: #38517036;
   --color-primary-dark: #142d4c;
   --color-secondary: #7b7b7b;
   --color-tertiary: #f8f8f8;
@@ -64,6 +65,13 @@ body {
 body a:hover {
   /* color: var(--color-accent); */
   text-decoration: none;
+}
+
+header {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  z-index: 9999;
+  border-bottom: 1px solid var(--color-primary-light);
 }
 
 h2 {

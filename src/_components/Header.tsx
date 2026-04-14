@@ -6,35 +6,35 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="py-2 mb-2 sticky w-f">
+    <header className="pt-2 sticky top-0">
       <nav className="flex items-center justify-between">
         <div className="header-left-wrapper flex items-center">
           <div className="logo-wrapper mr-8">
             <NextLink href="/" className="logo">
               <Image
                 src="./lf_logo.svg"
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 alt="logo"
-                className="border rounded-full p-1"
+                className="border rounded-full object-cover"
               />
             </NextLink>
           </div>
-          <div className="header-right-wrapper flex items-center gap-8">
-            <NextLink href="#" className="flex items-center gap-1">
-              Riguardo me
-            </NextLink>
-            <NextLink href="#" className="flex items-center gap-1">
-              Progetti
-            </NextLink>
+        </div>
+        <div className="header-right-wrapper flex items-center gap-16">
+          <NextLink href="#" className="flex items-center gap-1">
+            Riguardo me
+          </NextLink>
+          <NextLink href="#" className="flex items-center gap-1">
+            Progetti
+          </NextLink>
 
-            <NextLink href="#" className="flex items-center gap-1">
-              Skill
-            </NextLink>
-            <NextLink href="#" className="flex items-center gap-1">
-              Esperienza
-            </NextLink>
-          </div>
+          <NextLink href="#" className="flex items-center gap-1">
+            Skill
+          </NextLink>
+          <NextLink href="#" className="flex items-center gap-1">
+            Esperienza
+          </NextLink>
         </div>
         <div className="social-wrapper flex items-center gap-4">
           <NextLink
