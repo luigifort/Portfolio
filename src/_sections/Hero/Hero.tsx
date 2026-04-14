@@ -12,7 +12,8 @@ export default function Hero() {
         </h2>
 
         <p className="mt-6 text-gray-600 max-w-xl">
-          Sono Luigi Forte, sviluppatore front-end
+          Sono Luigi Forte, sviluppatore front-end da 3 anni. <br />
+          Lavoro principalmente con React e Next.js. <br />
         </p>
 
         <div className="mt-8 flex gap-4">
