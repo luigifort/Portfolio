@@ -8,7 +8,7 @@ export default function Hero() {
           Ciao mondo,
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
-          Benvenuti nel mio portfolio!
+          Benvenutə nel mio portfolio!
         </h2>
 
         <p className="mt-6 text-gray-600 max-w-xl">
