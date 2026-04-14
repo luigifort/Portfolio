@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Header() {
   return (
     <header className="pt-2 sticky top-0">
-      <nav className="flex items-center justify-between">
+      <nav className="flex items-center justify-between layout">
         <div className="header-left-wrapper flex items-center">
           <div className="logo-wrapper mr-8">
             <NextLink href="/" className="logo">

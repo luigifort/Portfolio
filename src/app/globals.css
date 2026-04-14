@@ -113,6 +113,11 @@ h2 {
   min-height: 200px
 }
 
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
 @layer components {
   .layout {
     @apply max-w-[1200px] mx-auto px-4;

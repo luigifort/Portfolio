@@ -16,6 +16,10 @@ export default function Contacts() {
           type="linkedin"
         />
       </div>
+      <p className="text-center text-lg">
+        Grazie per aver visitato il mio portfolio! Se vuoi saperne di più su di
+        me o sui miei progetti, non esitare a contattarmi.
+      </p>
     </section>
   );
 }
