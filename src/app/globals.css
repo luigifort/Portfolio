@@ -2,12 +2,12 @@
 
 :root {
   /* Colors */
-  --color-bg: #ffffff;
-  --color-surface: #0097b2;
-  --color-border: #0097b2;
-  --color-text: #0097b2;
-  --color-text-muted: #666666;
-  --color-accent: #006577;
+  --color-bg: #faf6e9;
+  --color-primary: #385170;
+  --color-primary-dark: #142d4c;
+  --color-secondary: #7b7b7b;
+  --color-tertiary: #f8f8f8;
+
 
   /* Fonts */
   /* Il browser legge il valore di quella variabile CSS, che Next.js ha già impostato correttamente con il font caricato. */
@@ -57,31 +57,31 @@
 
 body {
   background: var(--color-bg);
-  color: var(--color-text);
+  color: var(--color-primary);
   font-family: var(--font-sans);
 }
 
 body a:hover {
-  color: var(--color-accent);
+  /* color: var(--color-accent); */
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: var(--color-surface);
+  background-color: var(--color-primary);
   color: var(--color-bg);
   border-radius: 8px;
   padding: 12px 24px;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: var(--color-accent);
   color: var(--color-bg);
-}
+} */
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 8px;
   padding: 12px 24px;
 }
@@ -93,8 +93,8 @@ body a:hover {
 
 .card {
   background-color: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
