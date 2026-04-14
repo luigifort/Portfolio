@@ -9,8 +9,10 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export default function Skills() {
   return (
-    <section className="min-h-screen">
-      <h2 className="text-2xl font-semibold mb-6">Skill & Tecnologie</h2>
+    <section>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+        Skill & Tecnologie
+      </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
         <div className="bg-gray-200 p-2 rounded flex items-center gap-3">
           <SiHtml5 />

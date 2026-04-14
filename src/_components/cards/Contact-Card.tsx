@@ -8,7 +8,7 @@ type ContactCardProps = {
 
 export default function ContactCard(props: ContactCardProps) {
   return (
-    <div className="flex max-h-min border border-[#385170] rounded-2xl py-3.5 px-6 max-w-2xs">
+    <div className="max-h-min border border-[#385170] rounded-2xl py-3.5 px-6 max-w-108.25 w-full">
       <div>
         <h3 className="font-bold ">{props.contactType}</h3>
         {getLink(props)}

@@ -2,9 +2,9 @@ import ExperienceCard from "@/_components/cards/Experience-Card";
 
 export default function Experience() {
   return (
-    <section className="min-h-screen">
-      <h2 className="text-2xl font-semibold mb-6">Esperienza</h2>
-      <div className="timeline">
+    <section>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Esperienza</h2>
+      <div className="timeline flex flex-col items-center justify-center">
         <ExperienceCard
           title="Frontend Developer"
           contact="A contratto"
