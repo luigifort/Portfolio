@@ -18,12 +18,12 @@ export default function Hero() {
         <div className="mt-8 flex gap-4">
           <NextLink
             href="./CV_Luigi_Forte.pdf"
-            className="btn-secondary"
+            className="btn primary"
             target="_blank"
           >
             Vedi il CV
           </NextLink>
-          <NextLink href="#" className="btn-primary">
+          <NextLink href="#" className="btn secondary">
             Dai un&apos;occhiata ai progetti
           </NextLink>
         </div>
