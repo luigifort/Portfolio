@@ -65,6 +65,7 @@ body {
 body a:not(footer a):hover {
   color: var(--color-primary-dark);
   text-decoration: none;
+
 }
 
 header {
@@ -72,10 +73,6 @@ header {
   color: var(--color-primary);
   z-index: 9999;
   border-bottom: 1px solid var(--color-primary-light);
-}
-
-h2 {
-  text-align: center;
 }
 
 .btn-primary {
