@@ -75,30 +75,29 @@ header {
   border-bottom: 1px solid var(--color-primary-light);
 }
 
-.btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+.btn {
   border-radius: 8px;
   padding: 12px 24px;
   opacity: 0.9;
-
 }
 
-.btn-primary:hover {
+.btn.primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn.primary:hover {
   opacity: 1;
   color: var(--color-bg);
 }
 
-.btn-secondary {
+.btn.secondary {
   background-color: var(--color-bg);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
-  border-radius: 8px;
-  padding: 12px 24px;
-  opacity: 0.9;
 }
 
-.btn-secondary:hover {
+.btn.secondary:hover {
   color: var(--color-primary-dark);
   border: 1px solid var(--color-primary-dark);
   opacity: 1;
