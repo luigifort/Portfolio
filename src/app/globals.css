@@ -80,24 +80,28 @@ header {
   color: var(--color-bg);
   border-radius: 8px;
   padding: 12px 24px;
+  opacity: 0.9;
+
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+  opacity: 1;
   color: var(--color-bg);
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--color-bg);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   border-radius: 8px;
   padding: 12px 24px;
+  opacity: 0.9;
 }
 
 .btn-secondary:hover {
   color: var(--color-primary-dark);
   border: 1px solid var(--color-primary-dark);
+  opacity: 1;
 }
 
 .card {
@@ -115,8 +119,17 @@ footer {
   color: var(--color-bg);
 }
 
+@theme {
+  --color-bg: #faf6e9;
+  --color-primary: #385170;
+  --color-primary-light: #38517036;
+  --color-primary-dark: #142d4c;
+  --color-secondary: #7b7b7b;
+  --color-tertiary: #f8f8f8;
+}
+
 @layer components {
   .layout {
-    @apply max-w-[1200px] mx-auto px-4;
+    @apply max-w-300 mx-auto px-4;
   }
 }
