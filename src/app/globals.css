@@ -62,7 +62,7 @@ body {
   font-family: var(--font-sans);
 }
 
-body a:hover {
+body a:not(footer a):hover {
   color: var(--color-primary-dark);
   text-decoration: none;
 }
