@@ -26,7 +26,6 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-bold">Contatti</p>
             <div className="social-wrapper flex gap-4">
               <NextLink
                 href="https://www.linkedin.com/in/luigi-forte-0b8123143/"
