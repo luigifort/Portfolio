@@ -112,7 +112,9 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex gap-4 mt-5">
-        <Button type="submit">Invia</Button>
+        <Button type="submit" isDisabled={!isValid || !isDirty}>
+          Invia
+        </Button>
         <Button type="reset" variant="secondary">
           Reset
         </Button>
