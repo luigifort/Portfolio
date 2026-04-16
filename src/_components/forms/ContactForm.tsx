@@ -11,7 +11,7 @@ export default function ContactForm() {
   const {
     control,
     handleSubmit,
-    formState: { isValid, isDirty, errors },
+    formState: { errors },
     reset,
   } = useForm<ContactFormInput>({
     mode: "onChange",
