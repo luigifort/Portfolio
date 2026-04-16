@@ -23,8 +23,18 @@ export default function ContactForm() {
     },
     resolver: zodResolver(contactSchema),
   });
+
   return (
-    <Form>
+    <Form
+      onSubmit={handleSubmit(
+        (data) => {
+          console.log("VALID", data);
+        },
+        (errors) => {
+          console.log("ERRORS", errors);
+        }
+      )}
+    >
       <div className="flex flex-col  max-w-96">
         <Controller
           name="name"
@@ -32,10 +42,12 @@ export default function ContactForm() {
           render={({ field: { onChange, value } }) => (
             <TextField
               label="Nome"
-              name="Nome"
+              name="name"
               placeholder=" "
               value={value}
               onChange={onChange}
+              isInvalid={!!errors.name}
+              errorMessage={errors.name?.message}
             />
           )}
         />
@@ -45,7 +57,7 @@ export default function ContactForm() {
           render={({ field: { onChange, value } }) => (
             <TextField
               label="Azienda"
-              name="Azienda"
+              name="company"
               placeholder=" "
               value={value}
               onChange={onChange}
@@ -63,6 +75,8 @@ export default function ContactForm() {
               placeholder=" "
               value={value}
               onChange={onChange}
+              isInvalid={!!errors.email}
+              errorMessage={errors.email?.message}
             />
           )}
         />
@@ -72,10 +86,12 @@ export default function ContactForm() {
           render={({ field: { onChange, value } }) => (
             <TextField
               label="Oggetto"
-              name="Oggetto"
+              name="object"
               placeholder=" "
               value={value}
               onChange={onChange}
+              isInvalid={!!errors.object}
+              errorMessage={errors.object?.message}
             />
           )}
         />
@@ -85,19 +101,18 @@ export default function ContactForm() {
           render={({ field: { onChange, value } }) => (
             <TextField
               label="Richiesta"
-              name="richiesta"
+              name="message"
               placeholder=" "
               value={value}
               onChange={onChange}
+              isInvalid={!!errors.message}
+              errorMessage={errors.message?.message}
             />
           )}
         />
       </div>
-
       <div className="flex gap-4 mt-5">
-        <Button type="submit" isDisabled={!isValid || !isDirty}>
-          Invia
-        </Button>
+        <Button type="submit">Invia</Button>
         <Button type="reset" variant="secondary">
           Reset
         </Button>

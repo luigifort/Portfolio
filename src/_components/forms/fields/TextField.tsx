@@ -51,7 +51,9 @@ export function TextField({
 
       {label && <Label className={labelStyles}>{label}</Label>}
       {description && <Description>{description}</Description>}
-      <FieldError className={"relative bottom-6"}>{errorMessage}</FieldError>
+      {errorMessage && (
+        <FieldError className={"relative bottom-6"}>{errorMessage}</FieldError>
+      )}
     </AriaTextField>
   );
 }
