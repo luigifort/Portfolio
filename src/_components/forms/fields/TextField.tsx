@@ -2,6 +2,7 @@ import {
   TextField as AriaTextField,
   type TextFieldProps as AriaTextFieldProps,
   type ValidationResult,
+  TextArea,
 } from "react-aria-components/TextField";
 import { tv } from "tailwind-variants";
 import {
@@ -12,6 +13,7 @@ import {
   fieldBorderStyles,
 } from "./Field";
 import { composeTailwindRenderProps, focusRing } from "@/_utils/utils";
+import { twMerge } from "tailwind-merge";
 
 const inputStyles = tv({
   extend: focusRing,
@@ -23,14 +25,28 @@ const inputStyles = tv({
   },
 });
 
+const textAreaStyles = tv({
+  extend: focusRing,
+  base: "peer border-1 rounded-lg min-h-40 font-sans text-sm py-2 px-5 box-border transition bg-bg text-primary transition-all ease-in-out duration-300",
+  variants: {
+    isFocused: fieldBorderStyles.variants.isFocusWithin,
+    isInvalid: fieldBorderStyles.variants.isInvalid,
+    isDisabled: fieldBorderStyles.variants.isDisabled,
+  },
+});
+
 const labelStyles =
   "text-primary z-1 relative transition-all ease-in-out duration-300 peer-focus:bg-bg peer-focus:bottom-12.5 peer-focus:text-xs peer-focus:px-1 peer-placeholder-shown:bottom-8 left-4.5 peer-not-placeholder-shown:bottom-12.5  peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:px-1 peer-not-placeholder-shown:bg-bg";
+
+const labelTextAreasStyles =
+  "text-primary z-1 relative transition-all ease-in-out duration-300 peer-focus:bg-bg peer-focus:bottom-42.5 peer-focus:text-xs peer-focus:px-1 peer-placeholder-shown:bottom-38 left-4.5 peer-not-placeholder-shown:bottom-42.5  peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:px-1 peer-not-placeholder-shown:bg-bg";
 
 export interface TextFieldProps extends AriaTextFieldProps {
   label?: string;
   description?: string;
   placeholder?: string;
   errorMessage?: string | ((validation: ValidationResult) => string);
+  type?: "textArea";
 }
 
 export function TextField({
@@ -47,9 +63,21 @@ export function TextField({
         "flex flex-col gap-1 font-sans"
       )}
     >
-      <Input className={inputStyles} />
+      {props.type === "textArea" ? (
+        <TextArea className={textAreaStyles} />
+      ) : (
+        <Input className={inputStyles} />
+      )}
 
-      {label && <Label className={labelStyles}>{label}</Label>}
+      {label && (
+        <Label
+          className={
+            props.type === "textArea" ? labelTextAreasStyles : labelStyles
+          }
+        >
+          {label}
+        </Label>
+      )}
       {description && <Description>{description}</Description>}
       {errorMessage && (
         <FieldError className={"relative bottom-6"}>{errorMessage}</FieldError>

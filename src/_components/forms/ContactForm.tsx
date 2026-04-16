@@ -71,7 +71,6 @@ export default function ContactForm() {
             <TextField
               label="Email"
               name="email"
-              type="email"
               placeholder=" "
               value={value}
               onChange={onChange}
@@ -102,6 +101,7 @@ export default function ContactForm() {
             <TextField
               label="Richiesta"
               name="message"
+              type="textArea"
               placeholder=" "
               value={value}
               onChange={onChange}
