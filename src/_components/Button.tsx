@@ -19,13 +19,13 @@ const button = tv({
       primary:
         "bg-primary py-3 px-8 opacity-90 hover:opacity-100 hover:cursor-pointer hover:pointer-cursor pressed:bg-primary-dark text-bg",
       secondary:
-        "border-black/10 bg-neutral-50 hover:bg-neutral-100 pressed:bg-neutral-200 text-neutral-800 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:pressed:bg-neutral-500 dark:text-neutral-100",
+        "border-primary bg-bg opacity-90 hover:opacity-100 hover:cursor-pointer pressed:bg-neutral-200 text-primary dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:pressed:bg-neutral-500 dark:text-neutral-100",
       destructive: "bg-red-700 hover:bg-red-800 pressed:bg-red-900 text-white",
       quiet:
         "border-0 bg-transparent hover:bg-neutral-200 pressed:bg-neutral-300 text-neutral-800 dark:hover:bg-neutral-700 dark:pressed:bg-neutral-600 dark:text-neutral-100",
     },
     isDisabled: {
-      true: "border-transparent dark:border-transparent bg-neutral-100 dark:bg-neutral-800 text-neutral-300 dark:text-neutral-600 forced-colors:text-[GrayText]",
+      true: "dark:border-transparent hover:opacity-50 hover:cursor-not-allowed opacity-50 bg-secondary dark:bg-neutral-800 text-bg dark:text-neutral-600 forced-colors:text-[GrayText]",
     },
     isPending: {
       true: "text-transparent",
