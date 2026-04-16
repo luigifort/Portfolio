@@ -1,7 +1,10 @@
 import NextLink from "next/link";
 export default function Hero() {
   return (
-    <section className="px-6 py-24 min-h-screen flex flex-col h-full">
+    <section
+      id="aboutMe"
+      className="px-6 py-24 min-h-screen flex flex-col h-full"
+    >
       <div className="text-wrapper">
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
           Ciao mondo,

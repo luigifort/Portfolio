@@ -22,17 +22,17 @@ export default function Header() {
           </div>
         </div>
         <div className="header-right-wrapper flex items-center gap-16">
-          <NextLink href="#" className="flex items-center gap-1">
+          <NextLink href="#aboutMe" className="flex items-center gap-1">
             Riguardo me
           </NextLink>
-          <NextLink href="#" className="flex items-center gap-1">
+          <NextLink href="#projects" className="flex items-center gap-1">
             Progetti
           </NextLink>
 
-          <NextLink href="#" className="flex items-center gap-1">
+          <NextLink href="#skills" className="flex items-center gap-1">
             Skill
           </NextLink>
-          <NextLink href="#" className="flex items-center gap-1">
+          <NextLink href="#experience" className="flex items-center gap-1">
             Esperienza
           </NextLink>
         </div>

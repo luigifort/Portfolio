@@ -2,7 +2,7 @@ import ExperienceCard from "@/_components/cards/Experience-Card";
 
 export default function Experience() {
   return (
-    <section>
+    <section id="experience">
       <h2 className="text-2xl md:text-3xl font-semibold mb-6">Esperienza</h2>
       <div className="timeline flex flex-col">
         <ExperienceCard

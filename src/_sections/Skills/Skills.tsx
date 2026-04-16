@@ -9,7 +9,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export default function Skills() {
   return (
-    <section>
+    <section id="skills">
       <h2 className="text-2xl md:text-3xl font-semibold mb-6">
         Skill & Tecnologie
       </h2>
