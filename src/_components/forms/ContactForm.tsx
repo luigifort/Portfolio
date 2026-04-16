@@ -12,6 +12,7 @@ export default function ContactForm() {
     control,
     handleSubmit,
     formState: { isValid, isDirty, errors },
+    reset,
   } = useForm<ContactFormInput>({
     mode: "onChange",
     defaultValues: {
@@ -112,10 +113,8 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex gap-4 mt-5">
-        <Button type="submit" isDisabled={!isValid || !isDirty}>
-          Invia
-        </Button>
-        <Button type="reset" variant="secondary">
+        <Button type="submit">Invia</Button>
+        <Button type="reset" variant="secondary" onPress={() => reset()}>
           Reset
         </Button>
       </div>
