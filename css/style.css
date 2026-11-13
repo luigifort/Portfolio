@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #111827;
+    background: #ffffff;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.cta {
+    background: rgb(29, 78, 216);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 64px;
+    border-bottom: 1px solid rgb(229, 231, 235);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#header-left,
+#header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header-left a {
+    font-weight: 600
+}
+
+#header-left {
+    gap: 8px;
+}
+
+#header-right {
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+header a:hover {
+    opacity: 1;
+}
+
+
+
+/* WELCOME SECTION */
