@@ -159,3 +159,12 @@ section {
     flex-direction: column;
     gap: 20px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 64px;
+    border-top: 1px solid rgb(229, 231, 235);
+    font-size: 14px;
+    color: rgb(75, 85, 99);
+}
