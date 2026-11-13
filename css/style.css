@@ -24,6 +24,21 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    margin: 0px;
+    font-size: 56px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: rgb(75, 85, 99);
+}
+
 .cta {
     background: rgb(29, 78, 216);
     color: rgb(255, 255, 255);
@@ -31,6 +46,15 @@ body {
     border-radius: 8px;
     font-weight: 600;
     min-height: 20px;
+}
+
+.cta-outline {
+    border: 1px solid rgb(209, 213, 219);
+    color: rgb(17, 24, 39);
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 header {
@@ -63,15 +87,46 @@ header {
     gap: 2rem;
 }
 
-header a {
+a {
     text-decoration: none;
     opacity: 0.9;
 }
 
-header a:hover {
+a:hover {
     opacity: 1;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+    padding: 96px 64px 88px;
+    max-height: max-content;
+}
 
+/* HERO SECTION */
 
-/* WELCOME SECTION */
+#hero-section #job {
+    margin: 0px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: rgb(29, 78, 216);
+}
+
+.info {
+    margin: 8px 0px 0px;
+    font-size: 14px;
+    color: rgb(75, 85, 99);
+}
+
+#hero-section .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 873px;
+}
+
+#hero-section .description {
+    max-width: 620px;
+}
