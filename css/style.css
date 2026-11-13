@@ -130,3 +130,9 @@ section {
 #hero-section .description {
     max-width: 620px;
 }
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
