@@ -32,6 +32,12 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    margin: 0;
+    font-size: 40px;
+    max-width: 640px;
+}
+
 p {
     margin: 0px;
     font-size: 19px;
@@ -39,10 +45,19 @@ p {
     color: rgb(75, 85, 99);
 }
 
+.fa {
+    background: transparent;
+    margin-right: 8px;
+}
+
+.fa-share {
+    color: #ffffff;
+}
+
 .cta {
     background: rgb(29, 78, 216);
     color: rgb(255, 255, 255);
-    padding: 12px 20px;
+    padding: 14px 24px;
     border-radius: 8px;
     font-weight: 600;
     min-height: 20px;
@@ -135,4 +150,12 @@ section {
     display: flex;
     align-items: center;
     gap: 32px;
+}
+
+/* CONTACTS SECTION */
+
+#contacts .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
