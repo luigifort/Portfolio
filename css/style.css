@@ -2,7 +2,6 @@
     margin: 0;
     font-family: 'Inter', system-ui, sans-serif;
     color: #111827;
-    background: #ffffff;
 }
 
 
@@ -36,6 +35,11 @@ h2 {
     margin: 0;
     font-size: 40px;
     max-width: 640px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
 }
 
 p {
@@ -82,6 +86,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    background: #ffffff;
 }
 
 #header-left,
@@ -151,6 +156,155 @@ section {
     align-items: center;
     gap: 32px;
 }
+
+/* EXPERIENCE  SECTION*/
+#experience {
+    padding: 80px 64px;
+    background: rgb(249, 250, 251);
+    border-top: 1px solid rgb(229, 231, 235);
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.timeline-scroll {
+    overflow-x: auto;
+}
+
+.timeline {
+    padding: 0 64px;
+    box-sizing: border-box;
+    min-width: 680px;
+}
+
+.tl-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 24px;
+    list-style: none;
+}
+
+.tl-row+.tl-row {
+    margin-top: 84px;
+}
+
+/* Ogni esperienza disegna il proprio tratto di linea */
+.tl-item {
+    position: relative;
+    display: flex;
+    padding: 72px 20px 0;
+}
+
+.tl-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 39px;
+    height: 2px;
+    background: #BFDBFE;
+}
+
+/* La data porta con sé il proprio pallino */
+.tl-date {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font: 500 13px/20px 'JetBrains Mono', monospace;
+    color: #1E3A8A;
+    white-space: nowrap;
+}
+
+.tl-date::after {
+    content: "";
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F9FAFB;
+    border: 3px solid #1D4ED8;
+    box-shadow: 0 0 0 5px #F9FAFB;
+}
+
+.tl-date--start {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.tl-date--end {
+    right: 0;
+    transform: translateX(50%);
+}
+
+/* Pallino pieno per l'esperienza in corso */
+.tl-date--now::after {
+    background: #1D4ED8;
+    box-shadow: 0 0 0 5px #DBEAFE;
+}
+
+/* Raccordo a gomito tra una riga e la successiva */
+.tl-row:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -1px;
+    bottom: -42px;
+    left: 16px;
+    border: solid #BFDBFE;
+    border-width: 0 2px 2px 0;
+    border-radius: 0 0 16px 0;
+}
+
+.tl-row+.tl-row::before {
+    content: "";
+    position: absolute;
+    top: -42px;
+    left: -1px;
+    width: 16px;
+    height: 82px;
+    border: solid #BFDBFE;
+    border-width: 2px 0 0 2px;
+    border-radius: 16px 0 0 0;
+}
+
+/* Etichetta che copre la linea sopra il primo pallino della seconda riga */
+.tl-row+.tl-row .tl-item:first-child .tl-date--start {
+    background: #F9FAFB;
+    padding: 0 6px;
+}
+
+.tl-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+.tl-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.tl-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 
 /* CONTACTS SECTION */
 
