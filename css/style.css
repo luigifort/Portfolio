@@ -28,18 +28,20 @@ h1 {
     font-size: 56px;
     line-height: 1.08;
     letter-spacing: -0.03em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h2 {
     margin: 0;
     font-size: 40px;
     max-width: 640px;
+    font-weight: 500;
 }
 
 h3 {
     margin: 0;
     font-size: 18px;
+    font-weight: 400;
 }
 
 p {
