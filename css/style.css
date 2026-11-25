@@ -127,6 +127,10 @@ section {
     max-height: max-content;
 }
 
+.section-wrapper {
+    width: 100%;
+}
+
 /* HERO SECTION */
 
 #hero-section #job {
@@ -158,6 +162,16 @@ section {
     align-items: center;
     gap: 32px;
 }
+
+/* SKIllS  SECTION*/
+
+.skills-wrapper {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
 
 /* EXPERIENCE  SECTION*/
 #experience {
