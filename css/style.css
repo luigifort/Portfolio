@@ -331,13 +331,34 @@ section {
 .tl-card h3 {
     margin: 0;
     font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tl-card-title {
+    max-height: 42px;
+}
+
+.tl-card-text {
+    margin-top: auto;
+    max-height: 94px;
+    height: 100%;
 }
 
 .tl-card p {
     margin: 0;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #374151;
+}
+
+.tl-card i {
+    width: 100%;
+    max-width: 14px;
+    text-align: center;
 }
 
 .role {
