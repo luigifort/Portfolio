@@ -91,6 +91,10 @@ header {
     background: #ffffff;
 }
 
+#logo {
+    width: 40px;
+}
+
 #header-left,
 #header-right {
     display: flex;
@@ -181,8 +185,6 @@ section {
     gap: 8px;
     margin-top: 16px;
 }
-
-
 
 .skills-wrapper ul li:not(:last-child)::after {
     content: "•";
