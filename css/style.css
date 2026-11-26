@@ -84,7 +84,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 24px 64px;
+    padding: 18px 64px;
     border-bottom: 1px solid rgb(229, 231, 235);
     position: sticky;
     top: 0;
@@ -193,6 +193,7 @@ section {
 }
 
 .projects__grid {
+    margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
