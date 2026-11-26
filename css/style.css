@@ -36,6 +36,7 @@ h2 {
     font-size: 40px;
     max-width: 640px;
     font-weight: 500;
+    margin-bottom: 12px;
 }
 
 h3 {
@@ -167,7 +168,53 @@ section {
     gap: 32px;
 }
 
-/* SKIllS  SECTION*/
+/* PROJECTS SECTION */
+
+.projects-wrapper {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    opacity: 1;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 24px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #E5E7EB;
+    border-top: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* SKIllS  SECTION */
 
 .skills-wrapper {
     margin-top: 24px;
