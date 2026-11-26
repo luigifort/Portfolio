@@ -16,3 +16,10 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+//  chiude la modale con Esc 
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && location.hash.indexOf("#progetto-") === 0) {
+        location.hash = "#progetti";
+    }
+});

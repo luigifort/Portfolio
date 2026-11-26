@@ -51,33 +51,166 @@
             </div>
         </section>
 
-        <section id="projects">
-            <div class="section-wrapper">
-                <h2>Progetti</h2>
-                <p>Tre casi studio che mostrano come ragiono: problema, scelte, risultato.</p>
-                <div class="projects-wrapper">
-                    <div class="project">
-                        <button class="accordion">Project 1</button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <button class="accordion">Project 2</button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <button class="accordion">Project 3</button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
+        <section id="projects" class="projects">
+            <h2>Progetti selezionati</h2>
+            <p>Tre lavori che mostrano come ragiono: problema, scelte tecniche, risultato.</p>
 
-                </div>
+            <div class="projects__grid">
+                <article class="card">
+                    <div class="card__thumb">[SCREENSHOT]</div>
+                    <h3 class="card__title">Progetto 1</h3>
+                    <p class="card__text">
+                        <strong>Problema:</strong> sito Drupal custom bloccato da dipendenze incompatibili con il major
+                        upgrade.
+                        <strong>Cosa ho fatto:</strong> risolto i conflitti Composer, riscritto l’estensione Twig e
+                        creato un overlay a gradiente sui banner, controllabile dal CMS.
+                        <strong>Risultato:</strong> [METRICA REALE].
+                    </p>
+                    <p class="card__stack">Drupal 11 · Twig · Docker</p>
+                    <a class="card__link" href="#progetto-1">Leggi il caso studio →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card__thumb">[SCREENSHOT]</div>
+                    <h3 class="card__title">Progetto 2</h3>
+                    <p class="card__text">
+                        <strong>Problema:</strong> sito Drupal custom bloccato da dipendenze incompatibili con il major
+                        upgrade.
+                        <strong>Cosa ho fatto:</strong> risolto i conflitti Composer, riscritto l’estensione Twig e
+                        creato un overlay a gradiente sui banner, controllabile dal CMS.
+                        <strong>Risultato:</strong> [METRICA REALE].
+                    </p>
+                    <p class="card__stack">Drupal 11 · Twig · Docker</p>
+                    <a class="card__link" href="#progetto-2">Leggi il caso studio →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card__thumb">[SCREENSHOT]</div>
+                    <h3 class="card__title">Progetto 3</h3>
+                    <p class="card__text">
+                        <strong>Problema:</strong> sito Drupal custom bloccato da dipendenze incompatibili con il major
+                        upgrade.
+                        <strong>Cosa ho fatto:</strong> risolto i conflitti Composer, riscritto l’estensione Twig e
+                        creato un overlay a gradiente sui banner, controllabile dal CMS.
+                        <strong>Risultato:</strong> [METRICA REALE].
+                    </p>
+                    <p class="card__stack">Drupal 11 · Twig · Docker</p>
+                    <a class="card__link" href="#progetto-3">Leggi il caso studio →</a>
+                </article>
+
             </div>
         </section>
+
+        <div class="cs-modal" id="progetto-1" role="dialog" aria-modal="true" aria-labelledby="progetto-1-titolo">
+            <a class="cs-backdrop" href="#progetti" aria-label="Chiudi il caso studio" tabindex="-1"></a>
+
+            <article class="cs-panel">
+                <a class="cs-close" href="#progetti" aria-label="Chiudi il caso studio">&times;</a>
+
+                <p class="cs-kicker">Caso studio 01 · CMS</p>
+                <h2 class="cs-title" id="progetto-1-titolo">Aggiornamento a Drupal 11 e hero gestibile dal CMS</h2>
+
+                <p class="cs-meta">
+                    <span><strong>Ruolo:</strong> [IL TUO RUOLO]</span>
+                    <span><strong>Periodo:</strong> [PERIODO]</span>
+                    <span><strong>Cliente:</strong> [NOME O “CLIENTE ANONIMO”]</span>
+                </p>
+
+                <ul class="cs-tags">
+                    <li>Drupal 11</li>
+                    <li>Twig</li>
+                    <li>Docker</li>
+                </ul>
+
+                <h3>Il problema</h3>
+                <p>[CONTESTO E PROBLEMA].</p>
+
+                <h3>Cosa ho fatto</h3>
+                <ul>
+                    <li>[PUNTO 1]</li>
+                    <li>[PUNTO 2]</li>
+                </ul>
+
+                <h3>Risultato</h3>
+                <p class="cs-result">[METRICA REALE].</p>
+
+                <a class="cs-back" href="#progetti">← Torna ai progetti</a>
+            </article>
+        </div>
+
+        <div class="cs-modal" id="progetto-2" role="dialog" aria-modal="true" aria-labelledby="progetto-1-titolo">
+            <a class="cs-backdrop" href="#progetti" aria-label="Chiudi il caso studio" tabindex="-1"></a>
+
+            <article class="cs-panel">
+                <a class="cs-close" href="#progetti" aria-label="Chiudi il caso studio">&times;</a>
+
+                <p class="cs-kicker">Caso studio 02</p>
+                <h2 class="cs-title" id="progetto-1-titolo">Progetto 2</h2>
+
+                <p class="cs-meta">
+                    <span><strong>Ruolo:</strong> [IL TUO RUOLO]</span>
+                    <span><strong>Periodo:</strong> [PERIODO]</span>
+                    <span><strong>Cliente:</strong> [NOME O “CLIENTE ANONIMO”]</span>
+                </p>
+
+                <ul class="cs-tags">
+                    <li>Drupal 11</li>
+                    <li>Twig</li>
+                    <li>Docker</li>
+                </ul>
+
+                <h3>Il problema</h3>
+                <p>[CONTESTO E PROBLEMA].</p>
+
+                <h3>Cosa ho fatto</h3>
+                <ul>
+                    <li>[PUNTO 1]</li>
+                    <li>[PUNTO 2]</li>
+                </ul>
+
+                <h3>Risultato</h3>
+                <p class="cs-result">[METRICA REALE].</p>
+
+                <a class="cs-back" href="#progetti">← Torna ai progetti</a>
+            </article>
+        </div>
+
+        <div class="cs-modal" id="progetto-3" role="dialog" aria-modal="true" aria-labelledby="progetto-1-titolo">
+            <a class="cs-backdrop" href="#progetti" aria-label="Chiudi il caso studio" tabindex="-1"></a>
+
+            <article class="cs-panel">
+                <a class="cs-close" href="#progetti" aria-label="Chiudi il caso studio">&times;</a>
+
+                <p class="cs-kicker">Caso studio 03</p>
+                <h2 class="cs-title" id="progetto-1-titolo">Progetto 3</h2>
+
+                <p class="cs-meta">
+                    <span><strong>Ruolo:</strong> [IL TUO RUOLO]</span>
+                    <span><strong>Periodo:</strong> [PERIODO]</span>
+                    <span><strong>Cliente:</strong> [NOME O “CLIENTE ANONIMO”]</span>
+                </p>
+
+                <ul class="cs-tags">
+                    <li>Drupal 11</li>
+                    <li>Twig</li>
+                    <li>Docker</li>
+                </ul>
+
+                <h3>Il problema</h3>
+                <p>[CONTESTO E PROBLEMA].</p>
+
+                <h3>Cosa ho fatto</h3>
+                <ul>
+                    <li>[PUNTO 1]</li>
+                    <li>[PUNTO 2]</li>
+                </ul>
+
+                <h3>Risultato</h3>
+                <p class="cs-result">[METRICA REALE].</p>
+
+                <a class="cs-back" href="#progetti">← Torna ai progetti</a>
+            </article>
+        </div>
 
         <section id="skills">
             <div class="section-wrapper">

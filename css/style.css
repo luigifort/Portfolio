@@ -170,48 +170,229 @@ section {
 
 /* PROJECTS SECTION */
 
-.projects-wrapper {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+
+/* Sezione progetti */
+.projects {
+    padding: 80px 64px;
+    background: #F9FAFB;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #ffffff;
-    color: #444;
-    cursor: pointer;
-    padding: 24px;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
+.projects__title {
+    margin: 0 0 12px;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+}
+
+.projects__intro {
+    margin: 0 0 40px;
+    max-width: 640px;
+    font-size: 17px;
+    color: #4B5563;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px;
+    background: #fff;
     border: 1px solid #E5E7EB;
     border-radius: 12px;
 }
 
-.active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.card__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    border-radius: 8px;
+    background: #F3F4F6;
+    font-size: 14px;
+    color: #4B5563;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-    opacity: 1;
+.card__title {
+    margin: 0;
+    font-size: 20px;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 24px;
-    background-color: white;
-    display: none;
+.card__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.card__stack {
+    margin: 0;
+    font: 13px 'JetBrains Mono', monospace;
+    color: #4B5563;
+}
+
+.card__link {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Modale (solo CSS, si apre con l'hash #progetto-N) */
+body:has(.cs-modal:target) {
     overflow: hidden;
-    border: 1px solid #E5E7EB;
-    border-top: 0;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+}
+
+.cs-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: rgba(17, 24, 39, 0.65);
+    z-index: 999999;
+}
+
+.cs-modal:target {
+    display: flex;
+}
+
+.cs-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: default;
+}
+
+.cs-panel {
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    box-sizing: border-box;
+    padding: 48px 40px 40px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+.cs-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F3F4F6;
+    color: #111827;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.cs-close:hover {
+    background: #E5E7EB;
+    text-decoration: none;
+}
+
+.cs-close:focus-visible,
+.cs-modal a:focus-visible {
+    outline: 3px solid #1D4ED8;
+    outline-offset: 2px;
+}
+
+.cs-kicker {
+    margin: 0 0 8px;
+    font: 500 13px/20px 'JetBrains Mono', monospace;
+    color: #1D4ED8;
+}
+
+.cs-title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.cs-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin: 0 0 20px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #E5E7EB;
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.cs-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.cs-tags li {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #DBEAFE;
+    color: #1E3A8A;
+    font: 500 13px/20px 'JetBrains Mono', monospace;
+}
+
+.cs-panel h3 {
+    margin: 32px 0 8px;
+    font-size: 18px;
+}
+
+.cs-panel p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.cs-panel ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.cs-panel li+li {
+    margin-top: 8px;
+}
+
+.cs-result {
+    padding: 20px 24px;
+    border-left: 4px solid #1D4ED8;
+    border-radius: 0 8px 8px 0;
+    background: #F9FAFB;
+}
+
+.cs-back {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /* SKIllS  SECTION */
